@@ -26,6 +26,8 @@ app.use(bodyParser.json());
 
 // Pouting for project
 app.use("/api/products", require("./routes/products"));
+app.use("/api/blocks", require("./routes/blocks"));
+app.use("/api/caret", require("./routes/cart"));
 
 // Ping
 app.get("/api/ping", (req, res) => {
