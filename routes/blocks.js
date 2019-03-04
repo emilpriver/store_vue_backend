@@ -7,7 +7,7 @@ const blocks_schema = require("../schemas/blocks");
 router.get("/front_page", async (req, res) => {
 
   const blocks = await blocks_schema.find({
-      place: 'front_page'
+    place: 'front_page'
   })
 
   if (blocks) {

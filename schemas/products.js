@@ -4,18 +4,18 @@ const Schema = mongoose.Schema;
 const products_schema = new Schema(
   {
     title: { 
-        type: String,
-        required: true
+      type: String,
+      required: true
     },
     slug: { 
-        type: String, 
-        required: true, 
-        unique: true 
+      type: String, 
+      required: true, 
+      unique: true 
     },
     thumbnail: {
-        type: String,
-        required: true,
-        default: 'https://emilpriver-spaces.ams3.cdn.digitaloceanspaces.com/vue_store/default_shoe.jpg'
+      type: String,
+      required: true,
+      default: 'https://emilpriver-spaces.ams3.cdn.digitaloceanspaces.com/vue_store/default_shoe.jpg'
     },
     images: {
       type: Array,
