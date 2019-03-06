@@ -1,5 +1,6 @@
+require('dotenv').config()
 const mongoose = require("mongoose");
-const url = "mongodb://localhost:27017/vue_store";
+const url = process.env.DB_URL;
 
 mongoose.connect(
   url,
